@@ -149,7 +149,7 @@ while (totalEmpHr <= MAX_HRS_IN_MONTH && totalWorkingDays < NUM_OF_WORKING_DAYS)
     let empHrs = getWorkingHours(empCheck);
     totalEmpHr += empHrs;
     let dailyWage = calcDailyWage(empHrs);
-    
+
     // Storing Day-wise Wage in Map
     empDailyWageMap.set(totalWorkingDays, dailyWage);
 }
